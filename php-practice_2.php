@@ -92,6 +92,7 @@ $yamada->attend('PHP');
 
 // Q5 定義済みクラス
 //問題1
+$date = new DateTime('2021-03-02');
 $date->modify('-1 month');
 echo $date->format('Y-m-d') . "\n";
 //問題2

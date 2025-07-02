@@ -13,14 +13,11 @@ echo "現在時刻は" . date("Y/m/d H:i:s");
 
 // Q4 条件分岐-1 if文
 $device = "mac";
-if($device == "windows") {
-    echo "使用OSは、windowsです。";
+
+if($device == "mac") {
+    echo "使用OSは、" . $device . "です。\n";
 } else {
-    if($device == "mac") {
-        echo "使用OSは、macです。";
-    } else {
-        echo "どちらでもありません。";
-    }
+    echo "どちらでもありません。\n";
 }
 
 // Q5 条件分岐-2 三項演算子
@@ -98,24 +95,16 @@ function evaluateGrade($evaluate){
     switch ($evaluate) {
         case "A":
         case "B":
-            // code...
             return "合格です。\n";
-            break;
             
             case "C":
-            // code...
             return "合格ですが追加課題があります。\n";
-            break;
             
             case "D":
-            // code...
             return "不合格です。\n";
-            break;
         
         default:
-            // code...
             return "判定不明です。講師に問い合わせてください。\n";
-            break;
     }
 }
 
